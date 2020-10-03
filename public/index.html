@@ -20,19 +20,21 @@
 	<!-- Make it responsive to small screens -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Load google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@700&display=swap" rel="stylesheet">
+	<!-- Load google fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Passion+One:wght@700&display=swap"
+		rel="stylesheet">
 
-  <link href="/assets/mystyles.css" rel="stylesheet">
+	<link href="/assets/mystyles.css" rel="stylesheet">
 
 </head>
 
 <body>
 
 	<nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-danger">
-		<a class="navbar-brand mb-0 h2" href="https://www.google.com">
-      <span class="h2">FOODHUB</span>
-    </a>
+		<a class="navbar-brand mb-0" href="https://www.google.com">
+			<span class="h2">FOODHUB</span>
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,9 +43,10 @@
 			<ul class="navbar-nav mr-auto">
 
 			</ul>
-			<ul class="navbar-nav mr-auto">
+			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link active" href="https://www.google.com">Sign In <span class="sr-only">(current)</span></a>
+					<a class="nav-link active" href="https://www.google.com">Sign In
+						<span class="sr-only">(current)</span></a>
 
 				</li>
 				<li class="nav-item active">
@@ -57,27 +60,38 @@
 	</nav>
 
 
-	<h2>
-		Who delivers in your neighborhood?
-	</h2>
-
-	<form>
-		<div>
-			<label for="address">
-        Enter your address below.
-      </label>
-
-			<div>
-				<i class="fa fa-map-marker"></i>
-
-				<input id="address" type="text" placeholder="Street address, city, state">
-      </div>
+	<div class="container-fluid who-delivers text-white py6">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h2 class="font-weight-bold">
+					Who delivers in your neighborhood?
+				</h2>
+	
+				<form>
+					<div class="form-group">
+						<label for="address">
+								Enter your address below.
+						</label>
+	
+						<div class="input-group">
+							<div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-map-marker"></i> </span>
+							</div>
+	
+							<input class="form-control" id="address" type="text" placeholder="Street address, city, state">
+						</div>
+					</div>
+	
+					<button class="btn btn-primary btn-block">
+					  Find Food
+					</button>
+				</form>
 			</div>
+	
+		</div>
+	</div>
 
-			<button>
-      Find Food
-    </button>
-	</form>
+
 
 	<h2>
 		How to Foodhub
